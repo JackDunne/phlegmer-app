@@ -1,0 +1,146 @@
+header{
+  font-size: 60px;
+  background-color: #ff00aa;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  font-family: 'Artifika', serif;
+
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffe6ff
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1{
+  color: #d580ff;
+  padding: 30px;
+  width: 96.58%;
+}
+
+nav{
+  width:100%;
+  height: 30px;
+  padding: 10px;
+  background-color: #ff4dff;
+  display: flex;
+  border-radius: 10px;
+  font-family: 'Mina', sans-serif;
+
+}
+
+#section1{
+  height: auto;
+  width: 27%;
+  background-color: #eeccff
+;
+  float:left;
+  border: 5px solid #800040;
+}
+
+#section2{
+  height: auto;
+  width: 42%;
+  background-color: white;
+  float:left;
+  border: 5px solid #800040;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#section3{
+  height: auto;
+  width: 27%;
+  background-color: #eeccff
+;
+  float:left;
+  border: 5px solid #800040;
+}
+
+.navlinks{
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navlinks:hover{
+  text-decoration: underline;
+}
+
+
+h4{
+  color: #d580ff;
+  padding: 30px;
+  width: 96.58%;
+  padding: 10px;
+  font: 44px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+nav{
+  width:100%;
+  height: 30px;
+  padding: 10px;
+  background-color: #ff4dff;
+  display: flex;
+  border-radius: 10px;
+}
+
+#profsection1{
+  height: 300px;
+  width: 30%;
+  background-color: #eeccff
+;
+  float:left;
+  border: 5px solid #800040;
+}
+
+#followers{
+  height: 300px;
+  width: 66%;
+  background-color: white;
+  float:left;
+  border: 5px solid #800040;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.profnavlinks{
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.profnavlinks:hover{
+  text-decoration: underline;``
+}
+
+.loogie{
+  width: 80%;
+  height: auto;
+  padding-bottom: 10px;
+  border: 5px solid purple;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+#about{
+  font-size: 40px;
+  font-weight: 400;
+  color: purple;
+}
+
+#goals{
+  font-size: 20px;
+}

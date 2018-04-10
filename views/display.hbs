@@ -1,0 +1,9 @@
+<h1>Display Single Loogie</h1>
+
+<div class="loogie">
+  <h3>{{loogie.id}}</h3>
+  <h5>{{loogie.content}}</h5>
+<a class="btn btn-default pull-left" href="/">Back</a>
+<form  action="/users/delete/{{loogie.id}}?_method=DELETE" method="POST">
+    <input type="submit" class="btn btn-danger pull-right" value="Delete">
+</form>

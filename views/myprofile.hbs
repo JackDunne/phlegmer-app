@@ -1,0 +1,38 @@
+<header>
+  Phlegmer
+  <link href="https://fonts.googleapis.com/css?family=Artifika|Mina" rel="stylesheet">
+</header>
+<nav>
+  <a class="profnavlinks"href="/spittoon">Spittoon</a>
+  <a class="profnavlinks"href="#">Notifications</a>
+  <a class="profnavlinks"href="#">Messages</a>
+  <a class="profnavlinks"href="/users/myprofile">MyProfile</a>
+</nav>
+<h4>My Profile</h4>
+<h3>{{user.title}}</h3>
+<img src="{{user.profile}}" alt="">
+<section id="profsection1">
+  <div id="proftrending">
+    <div id="profloogie">
+      <a href="">{{user.username}}</a>
+      <a href="#">{{loogie.text}}</a>
+    </div>
+    my profile information
+  </div>
+</section>
+<section id="followers">
+  <div class="loogie">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+    <form action="/users/myprofile" method="post">
+      <div class="form-group">
+        <label>ID</label>
+        <input type="text" name="id" placeholder="loogie title">
+      </div>
+      <div class="form-group">
+        <label>Content</label>
+        <input type="text" name="content" class="form-control" placeholder="hack loogie">
+      </div>
+      <input type="submit" class="btn btn-primary" value="hack">
+    </form>
+  </div>
+</section>
