@@ -1,9 +1,36 @@
-<h1>Display Single Loogie</h1>
 
-<div class="loogie">
-  <h3>{{loogie.id}}</h3>
-  <h5>{{loogie.content}}</h5>
-<a class="btn btn-default pull-left" href="/">Back</a>
-<form  action="/users/delete/{{loogie.id}}?_method=DELETE" method="POST">
-    <input type="submit" class="btn btn-danger pull-right" value="Delete">
+
+<header>
+  Phlegmer
+  <link href="https://fonts.googleapis.com/css?family=Artifika|Mina" rel="stylesheet">
+</header>
+<nav>
+  <a class="navlinks"href="/spittoon">Spittoon</a>
+  <a class="navlinks"href="#">Notifications</a>
+  <a class="navlinks"href="#">Messages</a>
+  <a class="navlinks"href="/users/myprofile">MyProfile</a>
+</nav>
+<h1>Spittoon</h1>
+<form class="" action="/users/loogiedisplay/" method="post">
+  <div class="" style="margin: 24px auto;">
+    <input id="id" type="text" name="id" style="width:300px;"class="" placeholder="search for loogie by number">
+    <input type="submit" class="" value="Search">
+  </div>
 </form>
+<h3>{{user.title}}</h3>
+<img src="{{user.profile}}" alt="">
+<section id="section1">
+    trending loogies
+  </div>
+</section>
+<section id="section2">
+  <div class="loogie">
+    <h3>{{loogie.id}}</h3>
+    <h5>{{loogie.content}}</h5>
+  <form  action="/users/delete/{{loogie.id}}?_method=DELETE" method="POST">
+      <input type="submit" class="btn btn-danger pull-right" value="Delete">
+  </form>
+</section>
+<section id="section3">
+  suggested users
+</section>
