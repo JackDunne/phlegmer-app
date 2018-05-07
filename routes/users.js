@@ -24,6 +24,25 @@ router.post('/myprofile',function(req,res,next){
   });
 });
 
+router.get('/goto/:id',function (req, res){
+    let id = req.params.id;
+    client.hgetall(id,function(err,obj){
+        if(!obj){
+            console.log(id);
+            res.render('index',{
+                error: 'event does not exist',
+                title: 'NO!'
+            });
+        }
+        else{
+            console.log(obj);
+            obj.id = req.params.id;
+            res.render('display',{
+                loogie:obj
+            });
+        }
+    })
+});
 
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
@@ -60,43 +79,4 @@ router.delete('/delete/:id',function(req,res,next){
     res.redirect('/')
 });
 
-router.get('/all',function(req, res, next){
-
-    //TODO make a call to the database to retreive all events.
-
-    /*res.render('allevents', {title: 'All Events Ever!',
-                                para: 'This is a short ',
-                                btn1:'Go to bottom',
-                                btn2:'Go to top'});
-    */
-    client.keys('loogie*', function(err, data){
-        if(err){
-            console.log(err);
-        }
-        /*else if(1==0){
-            //test idea
-            let eventJSON = {events:[]};
-
-            for(let d=0; d<data.length;d++){
-                client.hgetall(data[d],function(err,obj){
-                    eventJSON.events.push({event:obj});
-                });
-            }
-            res.render('allevents',eventJSON);
-            console.log(eventJSON);
-        }
-        */
-        else{
-            let loogielist = {};
-
-            for(let d=0; d<data.length; d++){
-                let item = "loogielist"+d;
-                loogielist[item] = data[d];
-            }
-            res.render('allloogies', loogielist);
-            console.log(data);
-            console.log(loogielist);
-        }
-    });
-});
 module.exports = router;

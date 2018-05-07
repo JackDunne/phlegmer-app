@@ -1,10 +1,11 @@
 header{
   font-size: 60px;
-  background-color: #ff00aa;
-  color: white;
+  font-weight: 500;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  color: white;
+  background-color: #ffb3b3;
+  padding-bottom: 10px;
   width: 100%;
   font-family: 'Artifika', serif;
 
@@ -13,56 +14,66 @@ header{
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #ffe6ff
+background-color: #ff8080;
 }
 
-a {
-  color: #00B7FF;
-}
+
 
 h1{
-  color: #d580ff;
+  color: white;
   padding: 30px;
   width: 96.58%;
+  padding: 10px;
+  font: 44px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.boxy{
+  background-color: #ffb3b3;
+  border-radius: 10px;
+  width: 30%;
 }
 
 nav{
   width:100%;
   height: 30px;
   padding: 10px;
-  background-color: #ff4dff;
+  background-color: #ffb3b3;
   display: flex;
-  border-radius: 10px;
   font-family: 'Mina', sans-serif;
 
 }
 
 #section1{
-  height: 400px;
+  height: 520px;
   width: 27%;
   background-color: #eeccff
 ;
   float:left;
-  border: 5px solid #800040;
+  border: 5px solid #ffb3b3;
+}
+
+img{
+  height: 500px;
+  width: 99%;
 }
 
 #section2{
-  height: auto;
+  height: 520px;
   width: 42%;
   background-color: white;
   float:left;
-  border: 5px solid #800040;
+  border: 5px solid #ffb3b3;
   margin-left: 7px;
   margin-right: 7px;
 }
 
 #section3{
-  height: 400px;
+  height: 520px;
   width: 27%;
   background-color: #eeccff
 ;
   float:left;
-  border: 5px solid #800040;
+  border: 5px solid #ffb3b3;
 }
 
 .navlinks{
@@ -78,7 +89,7 @@ nav{
 
 
 h4{
-  color: #d580ff;
+  color: white;
   padding: 30px;
   width: 96.58%;
   padding: 10px;
@@ -89,26 +100,25 @@ nav{
   width:100%;
   height: 30px;
   padding: 10px;
-  background-color: #ff4dff;
+  background-color: #ffb3b3;
   display: flex;
-  border-radius: 10px;
 }
 
 #profsection1{
-  height: 300px;
+  height: 520px;
   width: 30%;
   background-color: #eeccff
 ;
   float:left;
-  border: 5px solid #800040;
+  border: 5px solid #ffb3b3;
 }
 
 #followers{
-  height: 300px;
+  height: 520px;
   width: 66%;
   background-color: white;
   float:left;
-  border: 5px solid #800040;
+  border: 5px solid #ffb3b3;
   margin-left: 7px;
   margin-right: 7px;
 }
@@ -127,12 +137,19 @@ nav{
 .loogie{
   width: 80%;
   height: auto;
-  padding-bottom: 10px;
-  border: 5px solid purple;
+  padding-bottom: 30px;
+  border: 5px solid #ffb3b3;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 20px;
   padding-left: 5px;
+  background-image:
+  radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size:100px 50px;
 }
 
 #about{

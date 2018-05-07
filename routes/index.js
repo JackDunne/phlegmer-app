@@ -15,11 +15,26 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Welcome to Express!' });
 });
 
-router.get('/spittoon', function(req,res,next){
-  res.render('spittoon');
+router.get('/spittoon',function(req, res, next){
+
+    client.keys('loogie*', function(err, data){
+        if(err){
+            console.log(err);
+        }
+        else{
+            let loogie = {};
+
+            for(let d=0; d<data.length; d++){
+                let item = "loogie"+d;
+                loogie[item] = data[d];
+            }
+            res.render('spittoon', loogie);
+            console.log(data);
+        }
+    });
 });
 
-router.post('/spittoon/reload', function(req,res,next){
+router.post('/loogiedisplay', function(req,res,next){
   let id = req.body.id;
   client.hgetall(id,function(err,obj){
     if(!obj){
@@ -30,7 +45,7 @@ router.post('/spittoon/reload', function(req,res,next){
     }
     else{
       obj.id = id;
-      res.render('spittoon',{
+      res.render('display',{
         loogie:obj
       });
     }

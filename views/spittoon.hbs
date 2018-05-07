@@ -1,15 +1,19 @@
-<header>
-  Phlegmer
-  <link href="https://fonts.googleapis.com/css?family=Artifika|Mina" rel="stylesheet">
-</header>
+  <header>
+    Phlegmer
+    <link href="https://fonts.googleapis.com/css?family=Artifika|Mina" rel="stylesheet">
+  </header>
+
 <nav>
   <a class="navlinks"href="/spittoon">Spittoon</a>
-  <a class="navlinks"href="#">Notifications</a>
-  <a class="navlinks"href="#">Messages</a>
+  <a class="navlinks"href="/notifications">Notifications</a>
+  <a class="navlinks"href="/notifications">Messages</a>
   <a class="navlinks"href="/users/myprofile">MyProfile</a>
 </nav>
+<div class="boxy">
 <h1>Spittoon</h1>
-<form class="" action="/spittoon/reload/" method="post">
+</div>
+
+<form class="" action="/loogiedisplay" method="post">
   <div class="" style="margin: 24px auto;">
     <input id="id" type="text" name="id" style="width:300px;"class="" placeholder="search for loogie by number">
     <input type="submit" class="" value="Search">
@@ -18,18 +22,21 @@
 <h3>{{user.title}}</h3>
 <img src="{{user.profile}}" alt="">
 <section id="section1">
-    trending loogies
+      <img src="https://2static2.fjcdn.com/comments/Love+the+song+so+this+new+style+of+meme+_d74af99c818e28ebed33d8b3eb9f15c4.jpg" alt="">
   </div>
 </section>
 <section id="section2">
       <div class="loogie">
-          <h3>{{loogie.id}}</h3>
-          <h5>{{loogie.content}}</h5>
-        <form  action="/users/delete/{{loogie.id}}?_method=DELETE" method="POST">
-            <input type="submit" class="btn btn-danger pull-right" value="Delete">
-        </form>
+          <a href="users/goto/{{loogie0}}">{{loogie0}}</a>
+      </div>
+      <div class="loogie">
+          <a href="users/goto/{{loogie1}}">{{loogie1}}</a>
+      </div>
+      <div class="loogie">
+          <a href="users/goto/{{loogie2}}">{{loogie2}}</a>
       </div>
 </section>
 <section id="section3">
   suggested users
+  <img src="https://i1.wp.com/img.ientry.com/webpronews/article_pics/suggested-user-list.jpg?ssl=1" alt="">
 </section>
